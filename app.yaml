@@ -1,0 +1,11 @@
+application: AppEngineDeveloperOwl
+version: 1
+runtime: php55
+api_version: 1
+default_expiration: "1m"
+handlers:
+- url: /.*
+  script: index.html
+
+- url: /scripts #your javascript folder
+  static_dir: scripts
